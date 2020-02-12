@@ -7,31 +7,27 @@
     <title>Chuck Says</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-
-    <p id="chuckSays">Chuck says....</p>
-    <!-- <button type="button" id="refreshQuote">Refresh Quote</button> -->
-    <form> <input type="hidden" value="animal" id="categoryInput" />
-        <input type="hidden" value="career" id="categoryInput" />
-        <input type="hidden" value="celebrity" id="categoryInput" />
-        <input type="hidden" value="explicit" id="categoryInput" />
-        <input type="hidden" value="fashion" id="categoryInput" />
-        <input type="hidden" value="food" id="categoryInput" />
-        <input type="hidden" value="history" id="categoryInput" />
-        <input type="hidden" value="money" id="categoryInput" />
-        <input type="hidden" value="movie" id="categoryInput" />
-        <input type="hidden" value="music" id="categoryInput" />
-        <input type="hidden" value="political" id="categoryInput" />
-        <input type="hidden" value="religion" id="categoryInput" />
-        <input type="hidden" value="science" id="categoryInput" />
-        <input type="hidden" value="sport" id="categoryInput" />
-        <input type="hidden" value="travel" id="categoryInput" />
-        <input type="text" value="" id="userCategorySelect" />
-        <button type="button" id="submitForm">Submit</button>
-    </form>
+    <div class="wrapper">
+        <h1>Chuck Says:</h1>
+        <div class="wrapper-img">
+            <img src="img/chuck norris 2.jpeg" alt="image of chuck norris">
+        </div>
+        <button type="button" id="refreshQuote">Refresh Quote</button>
+        <form id="categoryChangeForm">
+            <label id="categorySelectLabel">Select a Category</label>
+            <button type="submit" id="submitForm">Get a Quote</button>
+        </form>
+    </div>
+    <div class="modal-overlay">
+        <div class="modal-content">
+            <span id="closeModal" class="modal-close">X</span>
+            <p id="chuckSays">Chuck says....</p>
+        </div>
+    </div>
 </body>
 <script src="scripts/get.js"></script>
 <script src="scripts/scripts.js"></script>
